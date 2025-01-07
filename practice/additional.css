@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about{
+    display: flex;
+    gap: 40px;
+}
+.colored{
+    color: hotpink;
+}
+#search{
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid hotpink;
+   
+}
+.button{
+    background-color: hotpink;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* .image-center{
+    width: 800px;
+    height: 400px;
+    margin: 2% 25%;
+ 
+} */
+ main{
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+.image-center{
+    width: 300px;
+    height: 200px;
+}   

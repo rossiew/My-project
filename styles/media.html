@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        img {
+            width: 100%; /* Изображение адаптивное */
+            height: auto; /* Сохраняет пропорции изображения */
+            max-width: 400px; /* Максимальная ширина для десктопа */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Мобильный дизайн */
+        @media (max-width: 600px) {
+            header {
+                font-size: 3em; /* Увеличенный шрифт для заголовка */
+            }
+            img {
+                max-width: 100%; /* Полная ширина для мобильных */
+            }
+        }
+
+        /* Дизайн для десктопов */
+        @media (min-width: 601px) {
+            header {
+                font-size: 1em; /* Увеличенный шрифт для десктопа */
+            }
+            img {
+                max-width: 400px; /* Ограничение ширины для десктопа */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Responsive Webpage Example
+</header>
+
+<main>
+    <h2>Пример изображения</h2>
+    <img src="https://i.pinimg.com/564x/fa/44/e0/fa44e0ceeabbe07d1b73ebb805ac8410.jpg" alt="Пример изображения">
+</main>
+
+<footer>
+    © 2024 Your Website
+</footer>
+
+</body>
+</html>

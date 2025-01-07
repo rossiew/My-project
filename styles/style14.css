@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+}
+
+
+.navbar p {
+    background-color: rgb(191, 118, 191);
+    padding: 10px ;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.home-weight {
+    font-weight: bolder;
+}
+
+img {
+    width: 300px;
+
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px red
+}
+
+h3 {
+    letter-spacing: 20px;
+}
+
+.img-shadow {
+    box-shadow: 5px 37px 8px 0px rgb(39, 82, 64)
+}
+
+.p-shadow {
+    border-radius: 20px;
+    background-color: rgb(181, 114, 32);
+    width: 90px;
+    box-shadow: 0 15px 10px 0 rgba(168, 92, 92, 0.68);
+    border: 3px solid red;
+
+}
+
+/* .location a:link{
+        color: red;
+} */
+
+
+
+/* it doesnt matter u click it /it stay in own color */
+.location a:link {
+    color: red;
+}
+
+/* when u already visit this link */
+/* a:visited{
+    color: greenyellow;
+  } */
+
+
+/* when u going to near this link/button */
+/* 
+a:hover{
+    color: hotpink;
+  } */
+
+
+/* like when u click it turn to orange  */
+a:active {
+    color: orange;
+}
+
+
+#line {
+    border-left: 6px solid red;
+}
+
+
+.fit {
+    width: 400px;
+    height: 700px;
+    /* качестваны дурустауга  */
+    object-fit: cover;
+
+}

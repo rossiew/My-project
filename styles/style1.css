@@ -1,0 +1,299 @@
+/* transition-property */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition-property: background-color, transform;
+    /* Фон түсі мен түрлену анимацияланады */
+    transition-duration: 0.5s;
+    /* Анимация 0.5 секундқа созылады */
+}
+
+.box:hover {
+    background-color: red;
+    /* Курсорды элементке апарғанда фон түсі қызыл болады */
+    transform: scale(1.2);
+    /* Элементтің мөлшері 1.2 есе үлкейеді */
+}
+
+
+
+
+
+
+/* transition-duration */
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition-property: background-color;
+    /* Фон түсі анимацияланады */
+    transition-duration: 2s;
+    /* 2 секунд ішінде орындалады */
+}
+
+.box1:hover {
+    background-color: red;
+    /* Курсорды элементке апарғанда фон түсі қызыл болады */
+}
+
+
+
+
+
+
+
+/* transition-timing-function */
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition-property: background-color, transform;
+    /* Фон түсі мен түрленуді анимациялаймыз */
+    transition-duration: 0.5s;
+    /* Анимация 0.5 секундқа созылады */
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* Анимацияның жылдамдығы */
+}
+
+.box2:hover {
+    background-color: red;
+    /* Курсорды элементке апарғанда фон түсі қызыл болады */
+    transform: scale(1.2);
+    /* Элементтің мөлшері 1.2 есе үлкейеді */
+}
+
+
+/* keyframes */
+@keyframes example {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    animation: example 2s infinite;
+    /* 2 секундтық анимация, шексіз қайталанады */
+}
+
+
+
+/* animation-name */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 50;
+    }
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: fade;
+    /* fade анимациясының атауы */
+    animation-duration: 2s;
+    /* 2 секунд ішінде орындалады */
+}
+
+
+
+
+
+/* animation-interation-count */
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.box5 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: bounce;
+    /* bounce анимациясының атауы */
+    animation-duration: 2s;
+    /* 2 секунд ішінде орындалады */
+    animation-iteration-count: 3;
+    /* Шексіз рет қайталанады */
+}
+
+
+
+
+/* rotate */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.box6 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: spin 2s linear 3;
+    /* 2 секундта толық айналдыру */
+}
+
+
+
+
+/* scale */
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.box7 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: grow 2s ease-in;
+    /* 2 секундта 1.5 есе үлкейту */
+}
+
+
+
+
+/* translate */
+
+@keyframes move {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(100px, 50px);
+    }
+}
+
+.box8 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: move 2s ease-in-out;
+    /* 2 секундта жылжытады */
+}
+
+
+/* skew */
+
+@keyframes skewAnimation {
+    from {
+        transform: skew(0deg, 0deg);
+    }
+
+    to {
+        transform: skew(20deg, 10deg);
+    }
+}
+
+.box9 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: skewAnimation 2s ease-in-out;
+    /* 2 секунд ішінде қисайту */
+}
+
+
+
+
+/* translateX() */
+.translate-box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: transform 0.5s;
+    /* 0.5 секундтық анимация */
+}
+
+.translate-box:hover {
+    transform: translateX(100px);
+    /* Элементті оңға 100 пиксель жылжытады */
+}
+
+
+
+.image {
+    opacity: 0.7;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.registr a {
+    text-decoration: none;
+    color: black;
+}
+
+.login {
+    border: 2px solid rgb(51, 153, 207);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.login:hover {
+    background-color: bisque;
+}
+
+.sign {
+    border: 2px solid rgb(152, 103, 230);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sign:hover {
+    background-color: lightblue;
+}
+
+
+.logo-name{
+    transform: rotate(-20deg);
+}

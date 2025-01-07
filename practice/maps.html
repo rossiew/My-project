@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maps</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <iframe src="https://www.google.com/maps/embed" width="600" height="400" style="border: 0px;"></iframe>
+
+
+    <h1> HELLO WORLD </h1>
+
+
+    <!-- <img src="https://img.freepik.com/free-photo/close-up-felt-animal_23-2151728573.jpg?t=st=1725952836~exp=1725956436~hmac=5438735cc3294dfc4e31d77b75dc9c6ac92d9434a4b3002c32f98d81e486a667&w=360" width="200px"> -->
+
+
+    <!-- <img src="https://cdn.pixabay.com/photo/2024/03/15/22/03/created-by-ai-8635844_960_720.png" width="300"> -->
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+    <!-- <a href="https://cdn.pixabay.com/photo/2024/03/21/23/06/created-by-ai-8648630_960_720.png">Click to see more</a> -->
+
+
+    <!-- .block$*5 -->
+
+
+
+    <!-- <div class="container">
+    <img src="https://avatars.mds.yandex.net/i?id=57e94be93c90f16c2cbef5a4d89bc299_l-12614867-images-thumbs&n=13" alt="">
+    <img src="https://i.pinimg.com/736x/be/b7/8a/beb78ac8d7c28030b6d33c44277a9e11.jpg" alt="">
+    <img src="https://i.pinimg.com/736x/d8/5e/70/d85e70596e5031e988caba8a9d2eeb9c.jpg" alt="">
+    <img src="https://i.pinimg.com/736x/be/b7/8a/beb78ac8d7c28030b6d33c44277a9e11.jpg" alt="">
+    <img src="https://i.pinimg.com/736x/4e/6c/2d/4e6c2d7a55780d51cce1759c9135ea9f.jpg" alt="">
+</div> -->
+
+
+    <br><br><br><br><br>
+
+
+    <div class="container">
+        <h3> OTP VERIFICATION </h3>
+        <div class="inp">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+
+        </div>
+
+        <p style="color: white;">Don't get the code ? <a style="color: white;" href="">Resend</a></p>
+        <button>Verify</button>
+    </div>
+
+
+    <script>
+        let input = [...document.querySelectorAll('input')];
+        console.log(input)
+        input.forEach(element => {
+            element.addEventListener('keyup', () => {
+                if (input.indexOf(element) + 1 != input.length)
+                    input[input.indexOf(element) + 1].focus()
+
+            })
+        })
+
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Движущиеся изображения и видео</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            overflow: hidden; 
+        }
+        .gallery {
+            display: flex;
+            animation: slide 500s linear infinite; 
+        }
+        .item {
+            min-width: 200px;
+            height: 150px;
+            margin: 10px;
+            overflow: hidden;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+        img, video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+
+    
+<div class="gallery">
+  
+    <div class="item">
+        <img src="https://cdn.dribbble.com/uploads/47173/original/Vladimir_Gruev.png?1689174896&format=webp&resize=320x399&vertical=center" alt="Фото 2">
+    </div>
+    <div class="item">
+        <video autoplay muted loop>
+            <source src="https://video-preview.s3.yandex.net/ihwVUAIAAAA.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+    <div class="item">
+        <video autoplay muted loop>
+            <source src="https://video-preview.s3.yandex.net/hr/BteRAQAAAAA.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+    <div class="item">
+        <img src="https://cdn.dribbble.com/uploads/47171/original/daniele-buffa-3.png?1689174763&format=webp&resize=320x399&vertical=center" alt="Фото 3">
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

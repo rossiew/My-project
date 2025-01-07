@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эффект с сердечками при наведении</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .image-container {
+            position: relative;
+            width: 300px;
+        }
+
+        .image-container img {
+            width: 100%;
+            display: block;
+        }
+
+        .icon {
+            position: relative;
+            top: -100px;
+            right: 10px;
+            width: 40px;
+            height: 40px;
+            background: url('https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-serdechko-dlya-detei-na-prozrachnom-fone-11.jpg') no-repeat center;
+            background-size: contain;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-container:hover .icon {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://sun9-26.userapi.com/impg/cdtx0uzADM1BYdWWxWWD0Xvx4hwqgc08XnLssA/JAeLs2sRwxg.jpg?size=900x480&quality=96&sign=db48cbb169430731ca47f653c78699aa&type=share" alt="Пример изображения">
+        <div class="icon"></div>
+    </div>
+</body>
+</html>

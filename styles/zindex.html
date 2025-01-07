@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index Example</title>
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0; /* Цвет фона */
+    position: absolute;
+    z-index: 0; /* Самый низкий уровень */
+}
+
+.layer {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 10px; /* Закругленные углы */
+    position: absolute; /* Позволяет использовать z-index */
+}
+
+.layer-1 {
+    background-color: rgba(255, 0, 0, 0.7); /* Красный с прозрачностью */
+    top: 50px;
+    left: 50px;
+    z-index: 1; /* Первый уровень */
+}
+
+.layer-2 {
+    background-color: rgba(0, 255, 0, 0.7); /* Зеленый с прозрачностью */
+    top: 100px;
+    left: 100px;
+    z-index: 2; /* Второй уровень */
+}
+
+.layer-3 {
+    background-color: rgba(0, 0, 255, 0.7); /* Синий с прозрачностью */
+    top: 150px;
+    left: 150px;
+    z-index: 3; /* Третий уровень */
+}
+
+   </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="layer layer-1">Layer 1</div>
+    <div class="layer layer-2">Layer 2</div>
+    <div class="layer layer-3">Layer 3</div>
+</body>
+</html>

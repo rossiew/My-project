@@ -1,0 +1,12 @@
+.container{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container:hover{
+    border: 2px solid green;
+width: fit-content;
+
+}
+.container img{
+    border-radius: 50%;
+}
